@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberSeries", "NumberSeries\NumberSeries.csproj", "{80B34F61-E5AE-4DC3-B560-BED61B7D30E6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeTest.Api", "WebApplication\CodeTest.Api.csproj", "{F7BA872A-4F7B-440A-B3C2-993E4D619BD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeTest.Api", "CodeTest.Api\CodeTest.Api.csproj", "{F7BA872A-4F7B-440A-B3C2-993E4D619BD1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2E020355-A7E4-4A3F-8DCA-231510C2B372}"
 EndProject
