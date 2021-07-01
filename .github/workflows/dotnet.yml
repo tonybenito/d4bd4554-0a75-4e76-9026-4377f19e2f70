@@ -21,8 +21,8 @@ jobs:
       working-directory: ./src/CodeTest.Tests
       run: dotnet restore
     - name: Build
-      working-directory: ./src
+      working-directory: ./src/CodeTest.Tests
       run: dotnet build --no-restore
     - name: Run Tests
-      working-directory: ./src
+      working-directory: ./src/CodeTest.Tests
       run: dotnet test --no-build --verbosity normal
