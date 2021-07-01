@@ -14,8 +14,7 @@ namespace CodeTest.Tests
 
             // act
             var numberSeries = new NumberService();
-            var result = numberSeries.GetBiggestSeries(inputSeries);
-
+            var result = numberSeries.GetBiggestSeries(inputSeries);            
             // Assert
             Assert.AreEqual("1 5 9", result);
 

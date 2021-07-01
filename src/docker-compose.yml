@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  codetest.tests:
+    image: ${DOCKER_REGISTRY-}codetesttests
+    build:
+      context: .
+      dockerfile: CodeTest.Tests\Dockerfile
+    entrypoint: dotnet test CodeTest.Tests.dll
