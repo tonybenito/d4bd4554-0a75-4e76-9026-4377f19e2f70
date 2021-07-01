@@ -25,7 +25,8 @@ namespace WebApplication.Controllers
         [HttpGet]
         public string Get()
         {
-            return _numberService.GetBiggestSeries("6 2 4 3 1 5 9");
+            string series = _numberService.GetBiggestSeries("6 2 4 3 1 5 9");
+            return series;
 
         }
     }
