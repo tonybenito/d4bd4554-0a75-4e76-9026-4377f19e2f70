@@ -22,10 +22,7 @@ jobs:
       run: dotnet restore
     - name: Build Tests
       working-directory: ./src/CodeTest.Tests
-      run: dotnet build --no-restore
-    - name: Build Api
-      working-directory: ./src/CodeTest.Api
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore   
     - name: Run Tests
       working-directory: ./src/CodeTest.Tests
       run: dotnet test --no-build --verbosity normal
