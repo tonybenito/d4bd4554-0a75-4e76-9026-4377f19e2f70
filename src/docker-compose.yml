@@ -1,7 +1,7 @@
 version: '3.4'
 
 services:
-  codetest.tests:
+  test:
     image: ${DOCKER_REGISTRY-}codetesttests
     build:
       context: .

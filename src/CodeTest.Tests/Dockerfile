@@ -17,7 +17,6 @@ WORKDIR "/src/CodeTest.Tests"
 RUN dotnet build "CodeTest.Tests.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet test CodeTest.Tests.csproj -c Release
 RUN dotnet publish "CodeTest.Tests.csproj" -c Release -o /app/publish
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS final
