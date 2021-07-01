@@ -20,8 +20,11 @@ jobs:
     - name: Restore dependencies
       working-directory: ./src/CodeTest.Tests
       run: dotnet restore
-    - name: Build
+    - name: Build Tests
       working-directory: ./src/CodeTest.Tests
+      run: dotnet build --no-restore
+    - name: Build Api
+      working-directory: ./src/CodeTest.Api
       run: dotnet build --no-restore
     - name: Run Tests
       working-directory: ./src/CodeTest.Tests
