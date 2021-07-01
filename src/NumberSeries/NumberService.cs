@@ -7,16 +7,16 @@ using System.Linq;
 namespace NumberSeries
 {
     public class NumberService : INumberService
-    {
-       
+    {      
 
         public string GetBiggestSeries(string inputSeries)
         {
             StringBuilder resultSeries = new StringBuilder();
             string[] words = inputSeries.Split(' ');
             List<int> series = new List<int>();
-
             List<NumberSeriesDto> numberSeries = new List<NumberSeriesDto>();
+            int size = 0;
+
 
             if (string.IsNullOrEmpty(inputSeries))
             {
@@ -29,11 +29,9 @@ namespace NumberSeries
                 series.Add(Convert.ToInt32(word));
             }
 
-
-            int size = 0;
+            // extraction of biggest series           
             for (int i = 0; i < series.Count; i++)
             {
-
                 if (i == series.Count - 1)
                 {
                     if (series[i] > series[i - 1])
